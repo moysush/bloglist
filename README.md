@@ -11,7 +11,7 @@ A full-stack web application for saving, sharing, and interacting with favorite 
 - Token-Based Route Protection
 
 ## Tech Stack
-- **Frontend:** React, React Router, Redux/React Query
+- **Frontend:** React, React Router, Redux/React Query, Tailwind CSS
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB & Mongoose
 - **Testing:** Vitest, Supertest (Backend)
