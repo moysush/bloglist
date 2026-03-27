@@ -4,9 +4,9 @@ A full-stack web application for saving, sharing, and interacting with favorite 
 ---
 
 ## Features
-- User Authentication (Signup/Login)
+- User Authentication (Login)
 - Add, View, and Delete Blogs
-- Interactive "Like" System
+- Interactive "Like" & "Comment System
 - User-Specific Blog Dashboards
 - Token-Based Route Protection
 
@@ -14,7 +14,7 @@ A full-stack web application for saving, sharing, and interacting with favorite 
 - **Frontend:** React, React Router, Redux/React Query
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB & Mongoose
-- **Testing:** Jest, Supertest (Backend), Cypress (E2E)
+- **Testing:** Vitest, Supertest (Backend)
 
 ## Architecture & Design
 
@@ -27,7 +27,7 @@ A full-stack web application for saving, sharing, and interacting with favorite 
 
 | Login | Main Feed | Single Blog | Users |
 | :---: | :---: | :---: | :---: |
-| <img src="./screenshots/login.png" height="350" /> | <img src="./screenshots/blogs.png" height="350" /> | <img src="./screenshots/single-blog.png" height="350" /> | <img src="./screenshots/users.png" height="350" /> |
+| <img src="./screenshots/login.png" height="450" /> | <img src="./screenshots/blogs.png" height="450" /> | <img src="./screenshots/single-blog.png" height="450" /> | <img src="./screenshots/users.png" height="450" /> |
 
 ## Installation & Setup
 
