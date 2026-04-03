@@ -8,17 +8,20 @@ describe("BlogForm tests", async () => {
     const user = userEvent.setup();
     const mockHandler = vi.fn();
 
-    render(<BlogForm newBlog={mockHandler} />);
+    render(<BlogForm newBlog={mockHandler} toggleVisibility={vi.fn()} />);
 
-    const screenByLabel = (label) => {
-      return screen.getByLabelText(label);
-    };
+    // const screenByLabel = (label) => {
+    //   return screen.getByLabelText(label);
+    // };
 
-    await user.type(screenByLabel("Title:"), "Hello, Mars!");
-    await user.type(screenByLabel("Author:"), "Sush");
-    await user.type(screenByLabel("URL:"), "sush.hellomars.com");
+    await user.type(screen.getByPlaceholderText("Blog title"), "Hello, Mars!");
+    await user.type(screen.getByPlaceholderText("Author name"), "Sush");
+    await user.type(
+      screen.getByPlaceholderText("https://example.com/my-blog"),
+      "sush.hellomars.com",
+    );
 
-    await user.click(screen.getByText("Create"));
+    await user.click(screen.getByText("+ Publish Blog"));
 
     expect(mockHandler.mock.calls[0][0]).toStrictEqual({
       title: "Hello, Mars!",
